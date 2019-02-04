@@ -1,0 +1,95 @@
+h1 {
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 3em; 
+};
+
+.head {
+   display: flex;
+  }
+
+.face {  
+  width: 400px; 
+  margin: 0 auto; 
+  height: 400px; 
+  border-radius: 400px 400px; 
+  margin-bottom: 10px;
+  background-color: #FFF452;
+  -webkit-animation: changecolor 5s infinite;/* Chrome, Safari, Opera */
+       }
+
+.eyes{
+  display: flex;
+}
+
+.eye_left, .eye_right { 
+  width: 5em; 
+  height: 5em; 
+  border-radius: 10em; 
+  background-color: black;
+  animation: blink 5s infinite;
+ } 
+
+.eye_right { 
+  top: 200px;
+  right: 43em;
+  position: absolute;
+  }
+
+.eye_left { 
+  top: 200px;
+  right: 53em;
+  position: absolute;
+  }
+
+  .mouth {
+  width: 250px;
+  height: 20em;
+  border-style: solid;
+  border-radius: 110px;
+  border-width: 12px;
+  border-color: transparent transparent #000 transparent;
+  left: 41em;
+  top: 5em;
+  position: absolute;
+  }
+
+@-webkit-keyframes changecolor {
+  from {background-color: #FF5900 ;}
+  to {background-color: #FFF21A;}
+}
+
+  @keyframes blink {
+  10% {
+    height: 30px;
+    top: 200px;
+  }
+  30% {
+    height: 25px;
+    top: 200px;
+  }
+  50% {
+    height: 20px;
+    top: 200px;
+  }
+  70% {
+    height: 15px;
+    top: 200px;
+  }
+  90% {
+    height: 10px;
+    top: 200px;
+  }
+  110% {
+    height: 5px;
+    top: 200px;
+  }
+}
+
+
+
+
+  
+
+
+  
